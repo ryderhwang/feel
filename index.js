@@ -1,8 +1,11 @@
 import { registerRootComponent } from 'expo';
+import React from 'react';
+import Application from './App.js';
 
-import App from './App';
+class App extends React.Component {
+    render() {
+        return <Application />;
+    }
+}
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in the Expo client or in a native build,
-// the environment is set up appropriately
 registerRootComponent(App);

@@ -11,7 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen.js';
 import QuizScreen from './src/screens/QuizScreen.js';
-import FeelerScreen from "./src/screens/FeelerScreen";
+import FeelerScreen from "./src/screens/FeelerScreen.js";
 
 const Stack = createStackNavigator();
 

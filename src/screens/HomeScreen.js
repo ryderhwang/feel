@@ -11,9 +11,9 @@ const HomeScreen = ({ navigation }) => {
     <Fragment>
         <StatusBar barStyle="dark-content" />
         <Button
-            title="Feeler"
+            title="Go To Feeler"
             onPress={() =>
-                navigation.navigate('Go To Feeler')
+                navigation.navigate('Feeler')
             }
         />
         <SafeAreaView>

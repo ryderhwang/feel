@@ -17,10 +17,9 @@ import { Card } from 'react-native-paper';
 const FeelerScreen = ({ navigation }) =>  {
     return (
         <Fragment>
-            <ScrollView style={styles.container}>
+            <ScrollView contentContainerStyle={styles.container}>
                 <Text style={styles.paragraph}>
                     f e e l
-
                 </Text>
 
                 <Card>
@@ -71,7 +70,7 @@ export default FeelerScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'top',
+        justifyContent: 'center',
         paddingTop: Constants.statusBarHeight,
         backgroundColor: '#ecf0f1',
         padding: 8,
@@ -89,7 +88,7 @@ const styles = StyleSheet.create({
     },
     breakcard: {
         fontSize: 10,
-        fontWeight: 'light',
+        fontWeight: '100',
         textAlign: 'left',
         fontFamily: 'Baskerville',
     },
