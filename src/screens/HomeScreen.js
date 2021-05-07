@@ -1,9 +1,8 @@
 import React, {Fragment} from 'react';
 import {Image, SafeAreaView, ScrollView, StatusBar, Text, View, Button, StyleSheet} from "react-native";
-import {FEEL_ICON} from "../asset/images";
+import {FEEL_ICON} from "../assets/images";
 import TimeComponent from "../components/TimeComponent";
 import LearnMoreLinks from "../components/LearnMoreLinks";
-import {NavigationContainer} from "@react-navigation/native";
 import {Colors} from "react-native/Libraries/NewAppScreen";
 
 
@@ -11,6 +10,12 @@ const HomeScreen = ({ navigation }) => {
     return (
     <Fragment>
         <StatusBar barStyle="dark-content" />
+        <Button
+            title="Feeler"
+            onPress={() =>
+                navigation.navigate('Go To Feeler')
+            }
+        />
         <SafeAreaView>
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
@@ -32,8 +37,9 @@ const HomeScreen = ({ navigation }) => {
                         </Text>
                     </View>
                     <LearnMoreLinks />
+
                     <Button
-                        title="Go to Rider's quiz"
+                        title="Take a Quiz"
                         onPress={() =>
                             navigation.navigate('Quiz', { name: 'Rider' })
                         }
