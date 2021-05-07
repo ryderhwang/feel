@@ -1,0 +1,12 @@
+{
+  "name": "feel",
+  "displayName": "feel",
+  "expo": {
+    "name": "feel",
+    "slug": "feel",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
